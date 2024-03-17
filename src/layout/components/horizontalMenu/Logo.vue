@@ -11,7 +11,7 @@
     export default {
         data(){
             return{
-                title:'中亚通茂',
+                title:'同声探微',
                 logo: '../../../assets/images/logo.png'
             }
         },

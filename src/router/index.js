@@ -38,6 +38,51 @@ export const constantRouter = [
            }]
     },
     {
+        path:'/intro',
+        component:Layout,
+        redirect: '/intro/company',
+        children:[{
+            path: 'company',
+            name: 'introduction',
+            component:()=>import('@/views/introduction'),
+            meta:{title:'走进同声'}
+        }]
+    },
+    {
+        path:'/product',
+        component:Layout,
+        redirect: '/product/list',
+        children:[{
+            path: 'list',
+            name: 'product-list',
+            component:()=>import('@/views/product'),
+            meta:{title:'产品中心'}
+        }]
+    },
+    {
+        path:'/solution',
+        component:Layout,
+        redirect: '/solution/overview',
+        children:[{
+            path: 'overview',
+            name: 'solution-overview',
+            component:()=>import('@/views/solution'),
+            meta:{title:'解决方案'}
+        }]
+    },
+    {
+        path:'/contact',
+        component:Layout,
+        redirect: '/contact/us',
+        children:[{
+            path: '/us',
+            name: 'contact-us',
+            component:()=>import('@/views/contact'),
+            meta:{title:'联系我们'}
+        }]
+    },
+    /*
+    {
         path:'/news',
         component:Layout,
         name:'news',
@@ -162,7 +207,7 @@ export const constantRouter = [
             }
         ]
     },
-    /* {
+    {
         path:'/project',
         component:Layout,
         redirect:'/project/index',
@@ -175,7 +220,7 @@ export const constantRouter = [
             meta:{title:'项目进度'}
             }
         ]
-    }, */
+    }, 
     {
         path:'/knowledge-sharing',
         component:Layout,
@@ -205,6 +250,7 @@ export const constantRouter = [
             }
         ]
     },
+    */
     {
         path:'/search',
         component:Layout,

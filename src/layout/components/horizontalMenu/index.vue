@@ -15,7 +15,7 @@
         mode="horizontal"
         background-color="#fff"
         text-color="#000"
-        active-text-color="#49aff3"
+        active-text-color="rgb(52, 113, 176)"
         :unique-opened="true"
         :default-active="activeMenu"
         router
@@ -32,32 +32,12 @@
               <i class="el-icon-search" style="color: #fff" @click="searchEnter"  ></i>
            </template>
         </el-input>
-    <!-- 登录框--->
-     <div class="header-login" v-show="!loginStatue" >
-           <div class="pan-btn light-blue-btn" @click="showLogin">
-             去登录
-           </div>
-     </div>
-     <!--登录下拉菜单-->
-     <div v-show="loginStatue" style="margin-left: 10px;">
-      <el-dropdown @command="handleCommand" trigger="click">
-        <span class="el-dropdown-link">
-             {{user_name}}<i class="el-icon-arrow-down el-icon--right"></i>
-        </span>
-        <el-dropdown-menu slot="dropdown">
-          <el-dropdown-item command="a">个人信息</el-dropdown-item>
-          <el-dropdown-item command="b">退出</el-dropdown-item>
-        </el-dropdown-menu>
-      </el-dropdown>
-     </div>
     </div>
         
-     <login ref="login"></login>
     </div>
 </template>
 
 <script>
-import path from 'path'
 import {mapGetters} from 'vuex'
 import NavMenu from './NavMenu'
 import Item from './Item'
@@ -144,3 +124,8 @@ export default {
 }
 
 </script>
+<style scoped>
+body {
+  background-color: #ffffff; /* 白色背景色 */
+}
+</style>
