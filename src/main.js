@@ -9,7 +9,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import '@/styles/index.scss' // global css
 
 import animated  from 'animate.css'
-import App from './App'
+import App from './App.vue'
 import store from './store'
 import router from './router'
 import './permission'

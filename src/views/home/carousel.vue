@@ -12,6 +12,6 @@
     background-image: url('../../assets/images/beijing.png')
     }
 .el-carousel__item:nth-child(2n+1){
-        background-image: url('../../assets/images/banner.png')
+        background-image: url('../../assets/images/banner.jpg')
     }
 </style>
