@@ -1,6 +1,6 @@
 <template>
     <div style="width: 100%;" >
-        <quality-title :title="title" english="Quality Information" :isSearch="false" routeSkip="quality-list"  ></quality-title>
+        <quality-title :title="title" english="Product Information" :isSearch="false" routeSkip="quality-list"  ></quality-title>
         <quality-item v-if="isLoading" :qualityData="qualityData"  ></quality-item>
         <div v-else style="min-height: 250px;position: relative;" >
             <loading></loading>
@@ -50,7 +50,7 @@ export default {
     data(){
         return {
             title:{
-                nameLeft:"质量",
+                nameLeft:"产品",
                 nameRight:"信息"
             },
             pageSize:10,

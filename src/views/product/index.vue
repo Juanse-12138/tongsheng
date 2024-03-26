@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <img class="banner" src="../../assets/images/banner.jpg" alt="">
     <div class="product-page">
       <div class="left-panel">
         <div class="category-title">
@@ -7,7 +9,7 @@
         <div class="menu">
           <ul>
             <li v-for="product in products" :key="product.id" @click="selectProduct(product)"
-            :class="{ 'selected': selectedProduct.name === product.name }">
+            :class="{ 'selected': selectedProduct.id === product.id }">
               {{ product.name }}
             </li>
           </ul>
@@ -26,6 +28,8 @@
         </div>
       </div>
     </div>
+  </div>
+    
   </template>
   
   <script>
@@ -90,6 +94,11 @@ import productDetail from "./product-detail.vue";
   </script>
   
   <style scoped>
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
   .product-page {
     display: flex;
   }

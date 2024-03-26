@@ -8,7 +8,7 @@
  -->
 <template>
     <div>
-        <honor-title :title="title" english="Company Honors" :isSearch="false" routeSkip="honor-list"  ></honor-title>
+        <honor-title :title="title" english="Contact Us" :isSearch="false" routeSkip="honor-list"  ></honor-title>
         <honor-item v-if="isLoading" :honour-data-list="honourDataList"></honor-item>
         <div v-else style="min-height: 500px;position: relative;" >
             <loading></loading>
@@ -35,8 +35,8 @@ export default {
     data(){
         return{
             title:{
-                nameLeft:"荣誉",
-                nameRight:"中亚"
+                nameLeft:"联系",
+                nameRight:"我们"
             },
             isLoading:false,
             isNoData:false,

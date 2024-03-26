@@ -8,7 +8,7 @@
  -->
 <template>
     <div style="margin-top: 40px" >  
-        <news-title :title="title" english="New Information" :isSearch="false" routeSkip="news-trends"  ></news-title>
+        <news-title :title="title" english="Company Introduction" :isSearch="false" routeSkip="news-trends"  ></news-title>
         <el-row :gutter="20" type="flex" justify="space-btween" v-if="isNew" >
             <el-col :span="12"  style="height: 400px" class="animated rollIn" >
                     <news-details :activeInfo="activeInfo" ></news-details>
@@ -41,8 +41,8 @@ export default {
             newsData:[],//新闻列表数据
             isNew:false,//是否有新闻
             title:{
-                nameLeft:"新闻",
-                nameRight:"动态"
+                nameLeft:"走进",
+                nameRight:"同声"
             },
             isNoData:false,
         }

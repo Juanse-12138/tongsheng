@@ -34,6 +34,7 @@ import {Notice} from '@/views/notice/index'
 import {Quality} from '@/views/quality/index'
 import { Honor } from '@/views/honor/index'
 import { throttle } from '@/utils/commonality.js'
+import { Introduction } from '@/views/introduction'
 export default {
     data(){
         return {
@@ -49,7 +50,8 @@ export default {
         Notice,
         Quality,
         ModuleEntrance,
-        Honor
+        Honor,
+        Introduction
     },
     mounted(){
       window.addEventListener('scroll',throttle(this.handleScroll,300))

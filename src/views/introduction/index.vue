@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+      <img class="banner" src="../../assets/images/intro.jpg" alt="">
       <div class="nav-buttons">
         <button v-for="(navItem, index) in navigationItems" :key="index" 
         @click="toggleNavigation(navItem)" 
@@ -36,8 +37,10 @@
 
 <style scoped>
 /* Add your CSS styles here */
+.banner {
+    width: 100%;
+}
 .container {
-    margin-top: 100px;
     text-align: center;
 }
 .nav-buttons {
